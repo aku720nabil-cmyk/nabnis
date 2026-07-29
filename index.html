@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Museum of Us — Galeri Kenangan Kita</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <div id="particles" aria-hidden="true"></div>
+
+ 
+  <div id="edgeGlints" aria-hidden="true">
+    <span class="glint g1">✦</span>
+    <span class="glint g2">✧</span>
+    <span class="glint g3">✦</span>
+    <span class="glint g4">✧</span>
+    <span class="glint g5">⋆</span>
+    <span class="glint g6">⋆</span>
+  </div>
+
+  <!-- ====== HALAMAN SAMPUL ====== -->
+  <div id="cover">
+    <div class="cover-frame">
+      <div class="cover-corner tl"></div>
+      <div class="cover-corner tr"></div>
+      <div class="cover-corner bl"></div>
+      <div class="cover-corner br"></div>
+
+      <p class="eyebrow">Galeri Pribadi · Edisi Terbatas</p>
+      <h1 class="cover-title">Museum<br/>of Us</h1>
+      <p class="cover-sub">Setiap sudut di sini menyimpan satu kenangan tentang kita berdua.</p>
+
+      <button id="enterBtn" class="ticket">
+        <span class="shine"></span>
+        <span class="ticket-main">Masuk ke Galeri</span>
+        <span class="ticket-sub">Klik untuk membuka pintu</span>
+      </button>
+
+      <p class="sound-note">🎧 Nyalakan suara untuk pengalaman terbaik</p>
+    </div>
+    <div class="cover-vignette"></div>
+    <div class="cover-sparkle s1">✦</div>
+    <div class="cover-sparkle s2">✦</div>
+    <div class="cover-sparkle s3">✧</div>
+  </div>
+
+  <!-- ====== GALERI ====== -->
+  <div id="gallery" hidden>
+
+    <nav id="galleryNav">
+      <span class="nav-title">Museum of Us</span>
+      <span class="nav-progress"><span id="navCurrent">01</span> / <span id="navTotal">09</span></span>
+      <button id="muteBtn" aria-label="Aktif/nonaktifkan musik">♪</button>
+    </nav>
+
+    <div id="scrollBar"><div id="scrollBarFill"></div></div>
+
+    <div id="dots"></div>
+
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <span class="scroll-cue-arrow">↓</span>
+    </div>
+
+    <main id="exhibits"></main>
+
+  </div>
+
+
+  <audio id="bgm" src="assets/musik/lagu.mp3" loop preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
